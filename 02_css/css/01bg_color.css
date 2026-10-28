@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.funny {
+  width: 500px;
+  height: 200px;
+  border-style: ridge;
+  border-color: blueviolet;
+  border-width: 5px 10px;
+  background-color: aquamarine;
+}
+
+.funny ul {
+  padding: 35px;
+  border: 5px dotted #1a1a1a;
+}
+
+.fun1>h3 {
+  background-color: gold;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 100;
+  color: cadetblue;
+}
+
+.fun1>ul{
+  list-style: circle;
+  font-family: "Dongle", sans-serif;
+}
+
+.fun1>p {
+  background-color: dodgerblue;
+  font-family: "Dongle", sans-serif;
+}
+
+.fun2>h3 {
+  background-color: orange;
+    font-family: "Nanum Pen Script", cursive;
+    color: mediumaquamarine;
+}
+
+.fun2>p {
+  background-color: hotpink;
+    font-family: "Nanum Pen Script", cursive;
+}
+
+.fun2>ul{
+  list-style: square;
+  font-family: "Bagel Fat One", system-ui;
+}
