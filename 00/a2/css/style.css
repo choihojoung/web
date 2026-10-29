@@ -86,6 +86,7 @@ header nav ul.gnb>li>ul>li>a {
 .contents {
   height: 200px;
   background: indianred;
+  display: flex;
 }
 
 .contents .h2 {
