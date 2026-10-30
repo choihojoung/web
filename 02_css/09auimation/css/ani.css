@@ -1,53 +1,73 @@
 @charset "utf-8";
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
-.wrap{
+
+.wrap {
   position: fixed;
   inset: 0;
-  background: url(../../images/images/background.png)no-repeat center/cover; 
+  background: url(../../images/images/background.png)no-repeat center/cover;
 }
-img{
+
+img {
   position: absolute;
 }
 
-.viking{
+.viking {
   position: absolute;
   left: 240px;
   top: 400px;
   background: #ccc;
 }
 
-.viking img:nth-child(2){
+.viking img:nth-child(2) {
   transform-origin: top center;
-animation: vikingAni 7s infinite;
-}
-@keyframes vikingAni {
-  0%{transform: rotate(-70deg);}
-  50%{transform: rotate(70deg);}
-  100%{transform: rotate(-70deg);}
+  animation: vikingAni 7s infinite;
 }
 
-.swing{
+@keyframes vikingAni {
+  0% {
+    transform: rotate(-70deg);
+  }
+
+  50% {
+    transform: rotate(70deg);
+  }
+
+  100% {
+    transform: rotate(-70deg);
+  }
+}
+
+.swing {
   position: absolute;
   left: 800px;
   top: 350px;
   z-index: 10;
 }
 
-.swing img:nth-child(2){
+.swing img:nth-child(2) {
   transform-origin: top center;
-  animation:swingAni 3s infinite linear;
-}
-@keyframes swingAni {
-  0%{transform: rotate(-80deg);}
-  50%{transform: rotate(80deg);}
-  100%{transform: rotate(-80deg);}
+  animation: swingAni 3s infinite linear;
 }
 
-.train{
+@keyframes swingAni {
+  0% {
+    transform: rotate(-80deg);
+  }
+
+  50% {
+    transform: rotate(80deg);
+  }
+
+  100% {
+    transform: rotate(-80deg);
+  }
+}
+
+.train {
   width: 425px;
   height: 152px;
   background: url(../../images/images/train.png);
@@ -56,38 +76,52 @@ animation: vikingAni 7s infinite;
   bottom: 100px;
   animation: trainAni 15s infinite linear;
 }
+
 @keyframes trainAni {
-  0%{right: -425px;}
-  100%{right: 100%;}
- 
-}
+  0% {
+    right: -425px;
+  }
 
-.seat2{
- width: 126px;
- height: 130px;
- background: url(../../images/images/seat2.png);
- position: absolute;
- right: 400px;
- bottom: 400px;
- animation: seat2Ani 2s alternate infinite linear;
+  100% {
+    right: 100%;
+  }
 
 }
+
+.seat2 {
+  width: 126px;
+  height: 130px;
+  background: url(../../images/images/seat2.png);
+  position: absolute;
+  right: 400px;
+  bottom: 400px;
+  animation: seat2Ani 2s alternate infinite linear;
+
+}
+
 @keyframes seat2Ani {
-  from{transform: translateX(0);}
-  to{transform: translateX(-350px);}
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-350px);
+  }
 }
 
-.machine{
+.machine {
   position: absolute;
   top: 140px;
   right: 800px;
-background: #ccc;
+  background: #ccc;
 }
-.machine>img{
+
+.machine>img {
   left: 135px;
-  top: 20px;
+  top: 200px;
 }
-.rotate{
+
+.rotate {
   width: 385px;
   height: 385px;
   position: absolute;
@@ -97,7 +131,7 @@ background: #ccc;
   animation: rotateAni 20s linear infinite;
 }
 
-.machine .rotate img{
+.machine .rotate img {
   animation: imgAni 20s linear infinite;
   transform-origin: top;
 }
@@ -163,11 +197,21 @@ background: #ccc;
 }
 
 @keyframes rotateAni {
-  0%{transform: rotate(0);}
-  100%{transform: rotate(360deg);}
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes imgAni {
-  0%{transform: rotate(0);}
-  100%{transform: rotate(-360deg);}
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
 }
