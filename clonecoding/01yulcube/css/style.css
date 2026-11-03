@@ -215,7 +215,7 @@ body {
 }
 
 .face_1 .signal_card:nth-child(2) .img_box {
-  background-image: url(../assets/core_02_d.png);
+  background-image: url(../assets/core_04_d.png);
 }
 
 .face_1 .signal_card:nth-child(2):hover .img_box {
@@ -223,7 +223,7 @@ body {
 }
 
 .face_1 .signal_card:nth-child(3) .img_box {
-  background-image: url(../assets/core_03_d.png);
+  background-image: url(../assets/core_02_d.png);
 }
 
 .face_1 .signal_card:nth-child(3):hover .img_box {
@@ -231,7 +231,7 @@ body {
 }
 
 .face_1 .signal_card:nth-child(4) .img_box {
-  background-image: url(../assets/core_04_d.png);
+  background-image: url(../assets/core_05_d.png);
 }
 
 .face_1 .signal_card:nth-child(4):hover .img_box {
@@ -239,7 +239,7 @@ body {
 }
 
 .face_1 .signal_card:nth-child(5) .img_box {
-  background-image: url(../assets/core_05_d.png);
+  background-image: url(../assets/core_03_d.png);
 }
 
 .face_1 .signal_card:nth-child(5):hover .img_box {
@@ -322,14 +322,14 @@ body {
   font-size: 10px;
 }
 
-.direction_latout {
+.direction_layout {
   display: flex;
   flex-direction: column;
   gap: 20px;
 
 }
 
-.direction_latout>div {
+.direction_layout>div {
   width: 100%;
   min-height: 0;
   padding: 36px;
@@ -538,10 +538,10 @@ body {
   background: linear-gradient(180deg,transparent,rgba(0,0,0,.92));
   padding: 160px 34px 34px;
 }
-/* 
+
 #circle article.face_8 {
   display: block;
-} */
+}
 
 
 
