@@ -71,3 +71,49 @@ const infoSlide = new Swiper('.article_top .slide .swiper', {
     disableOnInteraction: false,
   },
 });
+
+//contents 영역의 가로 자동 슬라이드
+const contentsSlide = new Swiper('.contents .swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+
+  loop: true,
+  loopAdditionalSlides: 5,
+  speed: 9000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  on: {
+    //계속 같은 속도로 흐르게 linear를 적용
+    init: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'linear';
+    },
+    slideChangeTransitionStart: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'linear';
+    },
+  },
+});
+
+//blog 영역의 가로 자동 슬라이드
+const blogSlide = new Swiper('.blog .swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+
+  loop: true,
+  loopAdditionalSlides: 5,
+  speed: 12000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  on: {
+    //계속 같은 속도로 흐르게 linear를 적용
+    init: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'linear';
+    },
+    slideChangeTransitionStart: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'linear';
+    },
+  },
+});
